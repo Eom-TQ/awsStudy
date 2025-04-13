@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Flask CRUD</title>
+</head>
+<body>
+  <h1>📝 메모장</h1>
+  <input type="text" id="title" placeholder="제목">
+  <input type="text" id="content" placeholder="내용">
+  <button id="addBtn">메모 추가</button>
+  <ul id="memoList"></ul>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
